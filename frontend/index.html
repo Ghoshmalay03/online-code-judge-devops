@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Judge</title>
+</head>
+<body>
+    <h2>Online Code Judge</h2>
+
+    <textarea id="code" rows="10" cols="50"></textarea><br><br>
+    <button onclick="submitCode()">Run Code</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        async function submitCode() {
+            const code = document.getElementById("code").value;
+
+            const res = await fetch("http://localhost:3000/run", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ code })
+            });
+
+            const data = await res.json();
+            document.getElementById("output").innerText =
+                data.output || data.error;
+        }
+    </script>
+</body>
+</html>
