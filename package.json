@@ -5,5 +5,25 @@
     "express": "^5.2.1",
     "ioredis": "^5.10.1",
     "uuid": "^14.0.0"
-  }
+  },
+  "name": "code-judge",
+  "version": "1.0.0",
+  "description": "Online Code Judge System using Node.js, Docker and Jenkins CI/CD.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghoshmalay03/online-code-judge-devops.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ghoshmalay03/online-code-judge-devops/issues"
+  },
+  "homepage": "https://github.com/Ghoshmalay03/online-code-judge-devops#readme"
 }
